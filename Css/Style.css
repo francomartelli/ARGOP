@@ -1,0 +1,205 @@
+
+.header{
+    display: flex;
+    align-items: center;
+    padding: 15px 15px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #ffd52d;
+}
+.header__img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.header__list{
+    display: flex;
+    list-style: none;
+
+}
+.header__item{
+    margin: 0px 1rem;
+    
+}
+.header__link{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.main{
+    overflow: hidden;
+}
+.section__principal{
+    
+    background-color:darkkhaki;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+.section__secundaria{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 2px;
+    grid-row-gap: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+        
+.section__secundariadiv1{
+   
+   background-color: cadetblue;
+   flex-wrap: wrap;
+   align-items: center;
+   text-align: center;
+   
+   
+}
+.section__secautos{
+    display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items: center;
+padding: 0px 20px;
+}
+
+
+.auto__home{
+    width: 10rem;
+    height: 10rem;
+}
+
+.section__secundariadiv2{
+    
+    background-color: coral;
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+}
+
+.section__maps{
+    width: 90%;
+    height: 61%;
+}
+
+.section__nosotros1{
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.section__parrafos{
+    background-color: white;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.section__nosotros2{
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.section__sucursales{
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.div__sucursales2{
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.destino__sucursales{
+list-style: none;
+}
+.section__sucursales2{
+    background-color: white;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.section__contactoprinci{
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.section__contacto{
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.div__contactoprinci1{
+    padding-right: 15px;
+}
+.div__contactoprinci2{
+    padding-left: 15px;
+}
+
+.section__flotas{
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.section__flotas2{
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.footer{
+    background-color: black;
+}
+.footer__titulo{
+    color: white;
+}
+.footer__parrafo{
+    color: white;
+}
+
+.boton__flotainicio{
+    margin-top: 0px;
+    border-top-width: 0px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+}
+
+/* MEDIA QUERIES*/ 
+
+@media screen and (max-width: 768px ) {
+
+        .header{
+        justify-content: center;
+    }
+ 
+    .section__secundaria{
+            display: flex;
+    flex-direction: column;
+}
+
+    .section__maps{
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+
+}
+    
+@media screen and (max-width: 320px) {
+
+    .section__contacto {
+        flex-direction: column;
+    }
+
+    .header__list {
+        flex-direction: column;
+    }
+    
+}
