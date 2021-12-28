@@ -14,6 +14,7 @@
 .header__list{
     display: flex;
     list-style: none;
+    animation: nav 1s ease-in 0s 1 normal forwards;
 
 }
 .header__item{
@@ -24,6 +25,7 @@
     text-decoration: none;
     color: rgb(0, 0, 0);
     font-weight: bold;
+    
 }
 
 .main{
@@ -38,7 +40,9 @@
     align-items: center;
     padding-top: 10px;
     padding-bottom: 10px;
-    
+    -webkit-animation: scale-up-center 1s ease-out both;
+    animation: scale-up-center 1s ease-out both;
+   
 }
 
 .section__secundaria{
@@ -87,6 +91,7 @@ padding: 0px 20px;
 .section__maps{
     width: 90%;
     height: 61%;
+    animation: maps 2s ease-in 0s 1 normal forwards;
 }
 
 .section__nosotros1{
@@ -156,6 +161,8 @@ list-style: none;
 
 .footer{
     background-color: black;
+    background: rgb(9,9,121);
+    background: radial-gradient(circle, rgba(9,9,121,1) 0%, rgba(9,9,121,1) 64%, rgba(0,0,0,1) 100%);
 }
 .footer__titulo{
     color: white;
@@ -203,3 +210,82 @@ list-style: none;
     }
     
 }
+
+@-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  
+  @keyframes maps {
+    0% {
+      animation-timing-function: ease-in;
+      opacity: 1;
+      transform: translateY(-45px);
+    }
+  
+    24% {
+      opacity: 1;
+    }
+  
+    40% {
+      animation-timing-function: ease-in;
+      transform: translateY(-24px);
+    }
+  
+    65% {
+      animation-timing-function: ease-in;
+      transform: translateY(-12px);
+    }
+  
+    82% {
+      animation-timing-function: ease-in;
+      transform: translateY(-6px);
+    }
+  
+    93% {
+      animation-timing-function: ease-in;
+      transform: translateY(-4px);
+    }
+  
+    25%,
+    55%,
+    75%,
+    87% {
+      animation-timing-function: ease-out;
+      transform: translateY(0px);
+    }
+  
+    100% {
+      animation-timing-function: ease-out;
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+
+  @keyframes nav {
+    0% {
+      opacity: 0;
+      transform: translateX(-250px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
