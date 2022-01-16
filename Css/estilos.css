@@ -1,4 +1,6 @@
-header {
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -12,12 +14,14 @@ header {
   background-color: #ffd52d;
 }
 
-header .header__img {
+.header .header__img {
   max-width: 100%;
   max-height: 100%;
 }
 
 .navbar-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   list-style: none;
   -webkit-animation: nav 1s ease-in 0s 1 normal forwards;
@@ -34,18 +38,19 @@ header .header__img {
   font-weight: bold;
 }
 
-main {
+.main {
   overflow: hidden;
 }
 
 .section__principaldiv {
-  -webkit-animation: 1s ease-out both;
-  animation:  1s ease-out both;
+  -webkit-animation: scale-up-center 1s ease-out both;
+  animation: scale-up-center 1s ease-out both;
 }
 
-.section__principaldiv .section__secundaria {
+.section__secundaria {
   font-family: Arial, Helvetica, sans-serif;
   background-color: white;
+  display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1.5fr 1fr;
       grid-template-columns: 1.5fr 1fr;
@@ -57,7 +62,7 @@ main {
   padding-bottom: 10px;
 }
 
-.section__principaldiv .section__secundariadiv1 {
+.section__secundaria .section__secundariadiv1 {
   background-color: cadetblue;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -67,7 +72,9 @@ main {
   text-align: center;
 }
 
-.section__principaldiv .section__secautos {
+.section__secundaria .section__secautos {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -80,12 +87,12 @@ main {
   padding: 0px 20px;
 }
 
-.section__principaldiv .auto__home {
+.section__secundaria .section__secautos .auto__home {
   width: 10rem;
   height: 10rem;
 }
 
-.section__principaldiv .section__secundariadiv2 {
+.section__secundariadiv2 {
   background-color: coral;
   display: inline-block;
   text-align: center;
@@ -94,11 +101,11 @@ main {
           align-items: center;
 }
 
-.section__principaldiv .section__maps {
+.section__secundariadiv2 .section__maps {
   width: 90%;
   height: 57%;
-  -webkit-animation:  2s ease-in 0s 1 normal forwards;
-          animation: 2s ease-in 0s 1 normal forwards;
+  -webkit-animation: maps 2s ease-in 0s 1 normal forwards;
+          animation: maps 2s ease-in 0s 1 normal forwards;
 }
 
 .section__nosotros1 {
@@ -114,12 +121,6 @@ main {
 }
 
 .section__nosotros1 .section__nosotros2 {
-  background-color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-}
-
-.section__nosotros2 {
   background-color: white;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
@@ -156,7 +157,8 @@ main {
 .section__contactoprinci .section__contacto {
   background-color: white;
   font-family: Arial, Helvetica, sans-serif;
-
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   text-align: center;
   -webkit-box-pack: center;
@@ -164,11 +166,11 @@ main {
           justify-content: center;
 }
 
-.section__contactoprinci .div__contactoprinci1 {
+.div__contactoprinci1 {
   padding-right: 15px;
 }
 
-.section__contactoprinci .div__contactoprinci2 {
+.div__contactoprinci1 .div__contactoprinci2 {
   padding-left: 15px;
 }
 
@@ -229,6 +231,11 @@ main {
     padding-left: 1px;
     padding-right: 1px;
   }
+  .section__secautos {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -243,6 +250,11 @@ main {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .section__secautos {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 

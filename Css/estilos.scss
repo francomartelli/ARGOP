@@ -1,42 +1,44 @@
-header{
+.header{
     display: flex;
     align-items: center;
     padding: 15px 15px;
     justify-content: space-between;
     flex-wrap: wrap;
     background-color: #ffd52d;
-    
-    .header__img{
-        max-width: 100%;
-        max-height: 100%;
-    }
 
+    .header__img{
+    max-width: 100%;
+    max-height: 100%;
 }
-    
+}
+
 .navbar-nav{
     display: flex;
     list-style: none;
     animation: nav 1s ease-in 0s 1 normal forwards;
 
- .nav-item{
+    .nav-item{
     margin: 0px 1rem;
     
 }
-    .nav-link{
+.nav-link{
     text-decoration: none;
     color: rgb(0, 0, 0);
-    font-weight: bold; }
-
+    font-weight: bold;
+    
+}
 }
 
-main{
+.main{
     overflow: hidden;
 }
 
- .section__principaldiv{
+.section__principaldiv{
     -webkit-animation: scale-up-center 1s ease-out both;
     animation: scale-up-center 1s ease-out both;
    
+}
+
 .section__secundaria{
     font-family: Arial, Helvetica, sans-serif;
     background-color: white;
@@ -47,8 +49,7 @@ main{
     grid-row-gap: 0px;
     padding-top: 10px;
     padding-bottom: 10px;
-}
-    .section__secundariadiv1{
+.section__secundariadiv1{
    
    background-color: cadetblue;
    flex-wrap: wrap;
@@ -63,27 +64,31 @@ flex-wrap: wrap;
 justify-content: space-between;
 align-items: center;
 padding: 0px 20px;
-}
-
 .auto__home{
     width: 10rem;
     height: 10rem;
 }
+}
+}
+        
 
- .section__secundariadiv2{
-   
+
+
+
+.section__secundariadiv2{
+    
     background-color: coral;
     display: inline-block;
     text-align: center;
     align-items: center;
-}
-
- .section__maps{
+.section__maps{
     width: 90%;
     height: 57%;
     animation: maps 2s ease-in 0s 1 normal forwards;
 }
 }
+
+
 
 .section__nosotros1{
     background-color: white;
@@ -99,13 +104,6 @@ padding: 0px 20px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
-
-}
-
-.section__nosotros2{
-    background-color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
 }
 
 .section__sucursales{
@@ -126,46 +124,49 @@ list-style: none;
     font-family: Arial, Helvetica, sans-serif;
 
 }
-
-
 }
-
 
 .section__contactoprinci{
     background-color: white;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-.section__contacto{
+
+  .section__contacto{
     background-color: white;
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     text-align: center;
     justify-content: center;
-}
-.div__contactoprinci1{
-    padding-right: 15px;
-}
-.div__contactoprinci2{
-    padding-left: 15px;
+}  
 }
 
+
+.div__contactoprinci1{
+    padding-right: 15px;
+.div__contactoprinci2{
+    padding-left: 15px;
+}    
 }
+
 
 .section__flotas{
     background-color: white;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    .section__flotas2{
+
+ .section__flotas2{
     background-color: white;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+}   
 }
-}
+
 
 .footer{
     background-color: black;
     background: rgb(9,9,121);
     background: radial-gradient(circle, rgba(9,9,121,1) 0%, rgba(9,9,121,1) 64%, rgba(0,0,0,1) 100%);
+
 .footer__titulo{
     color: white;
 }
@@ -173,6 +174,7 @@ list-style: none;
     color: white;
 }
 }
+
 
 .boton__flotainicio{
     margin-top: 0px;
@@ -202,6 +204,9 @@ list-style: none;
         padding-left: 1px;
         padding-right: 1px;
     }
+    .section__secautos{
+        justify-content: center;
+    }
 
 }
     
@@ -215,6 +220,9 @@ list-style: none;
         flex-direction: column;
     }
     
+    .section__secautos{
+        justify-content: center;
+    }
 }
 
 @-webkit-keyframes scale-up-center {
