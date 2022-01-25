@@ -221,13 +221,13 @@
   background-color: red;
   text-align: center;
   color: rgb(0, 0, 0);
-  border: 1px solid black;
 }
 
 .boton-ver-mas{
   @extend .boton;
-  background-color: saddlebrown;
-color:seagreen;
+  background-color: rgba(128, 69, 69, 0.548);
+color:rgb(0, 0, 0);
+margin: 8px;
 }
 
 
